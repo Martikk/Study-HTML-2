@@ -16,7 +16,7 @@ body {
 
 section {
     background: #EFF2F9;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ section {
     background: #FFF;
     box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
     width: 1170px;
-    height: 800px;
+    min-height: 800px;
     padding: 60px 0 70px;
     display: flex;
 }
@@ -213,6 +213,23 @@ section {
 .butn:hover {
     transform: scale(0.95);
 }
-@media screen and (max-width:800px) {
-    .main-title {color: #D52F29;}
+@media screen and (max-width:768px) {
+    section {
+        height: 100%;
+    }
+    .card {
+        flex-direction: column;
+        margin: 40px;
+        width: 690;
+    }
+    .product_image_block {
+        border-bottom: 2px solid rgba(20, 20, 20, 0.15);
+        border-right: none;
+    }
+    .previe-wraper {
+        margin: 60px 0 70px;
+    }
+    .product-info-block {
+        padding: 60px 60px 0 60px;
+    }
 }
