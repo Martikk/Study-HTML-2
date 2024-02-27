@@ -213,14 +213,14 @@ section {
 .butn:hover {
     transform: scale(0.95);
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1280px) {
     section {
         height: 100%;
     }
     .card {
         flex-direction: column;
         margin: 40px;
-        width: 690;
+        width: 690px;
     }
     .product_image_block {
         border-bottom: 2px solid rgba(20, 20, 20, 0.15);
@@ -232,4 +232,11 @@ section {
     .product-info-block {
         padding: 60px 60px 0 60px;
     }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        margin: 20px 15px 35px;
+    }
+    
 }
